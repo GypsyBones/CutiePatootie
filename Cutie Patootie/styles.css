@@ -8,10 +8,8 @@
     --main-accent: #CCA43B;
     --main-light1: #dceff9;
     --main-light2: #DFF6E2;
-    align-items: center;
-    align-content: center;
 }
-
+/* I think i read somewhere that root was archaic, but it seemed like such a good way to keep all the colors from my palette in one area to reference*/
 
 html {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
@@ -25,10 +23,12 @@ body {
     color: var(--main-light2);
     position: static;
 }
+/* position is defined purely because of the position of the header is fixed */
 
 div {
     text-align: center;
 }
+/* this is to ensure all the pictures are centered. It works like a charm. */
 
 .darkbackground {
     background-color: black;
@@ -42,6 +42,8 @@ div {
     width: 100%;
 
 }
+/* the main header, position is fixed so that it stays on screen when you scroll, width is set to 100% to ensure it spans the entire width of the viewport. 
+z-index ensures that the header is placed at the first position, the top position among all other items on the page as you scroll. */
 
 .header2 {
     background-color: black;
@@ -60,18 +62,19 @@ div {
     list-style-type: none;
     font-size: large;
 }
-
+/* this is for the navigation pane, and ensures that the linked options are evenly spaced out, with specific gaps, and no bullet points on the listed items. */
 
 .form {
     display: flex;
     justify-content: center;
+    padding: 10px 0px 70px 0px;
 }
+/* ensures that the form remains in center  */
 
-/* used for the 'article' of the page */
 .container {
     padding: 100px 50px 10px 50px;
 }
-
+/* used for the 'article' of the page, with extra padding to accomadate the fixed header */
 
 .footer {
     text-align: left;
@@ -79,42 +82,42 @@ div {
     font-size: xx-small;
     padding: 10px 5px 25px 5px;
 }
+/* pretty self explanatory */
 
 #text-dark {
     color: var(--main-dark);
 }
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    padding: 50px 0px 50px 0px;
+/* used to override other text colors */
 
 .gif {
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
-
-
+/* just to give extra room around gifs for better viewing */
 
 .hr-f {
     margin: 55px 5px 0px 5px;
 }
+/* hr footer */
 
 .hr-h {
     margin: 5px 5px 25px 5px;
 }
+/* hr header */
 
 #backshadow {
     text-shadow:    0px 0px 5px var(--main-accent), 
                     0px 0px 8px var(--main-accent), 
                     0px 0px 10px var(--main-accent);
 }
+/* text shadow for specific text, I wanted a very vibrant shadow, 
+so I duplicated the effect and expanded the blur with each iteration */
 
 th,
 td,
-tr, {
-    color: vaar;
+tr {
+    color: var(--main-dark);
 }
+/* ensures that text of the table are colored dark */
 
 h1 {
     color: var(--main-dark);
