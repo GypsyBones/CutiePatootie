@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+:root {
+    --main-dark: #152614; 
+    --main-red: #69140E;
+    --main-accent: #CCA43B;
+    --main-light1: #dceff9;
+    --main-light2: #DFF6E2;
+    align-items: center;
+    align-content: center;
+}
+
+
+html {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    color: var(--main-light2);
+    position: static;
+}
+
+div {
+    text-align: center;
+}
+
+.darkbackground {
+    background-color: black;
+}
+
+.header {
+    background-color: var(--main-light1);
+    padding: 10px 10px 1px 10px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+
+}
+
+.header2 {
+    background-color: black;
+    padding: 30px 10px 1px 10px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+
+.nav-flexbox {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 100px;
+    padding-right: 50px;
+    list-style-type: none;
+    font-size: large;
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+/* used for the 'article' of the page */
+.container {
+    padding: 100px 50px 10px 50px;
+}
+
+
+.footer {
+    text-align: left;
+    color: var(--main-red);
+    font-size: xx-small;
+    padding: 10px 5px 25px 5px;
+}
+
+#text-dark {
+    color: var(--main-dark);
+}
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding: 50px 0px 50px 0px;
+
+.gif {
+    padding: 100px 0px;
+}
+
+
+
+.hr-f {
+    margin: 55px 5px 0px 5px;
+}
+
+.hr-h {
+    margin: 5px 5px 25px 5px;
+}
+
+#backshadow {
+    text-shadow:    0px 0px 5px var(--main-accent), 
+                    0px 0px 8px var(--main-accent), 
+                    0px 0px 10px var(--main-accent);
+}
+
+th,
+td,
+tr, {
+    color: vaar;
+}
+
+h1 {
+    color: var(--main-dark);
+    text-align: center;
+}
+
+
+h2 { 
+    color: var(--main-red);
+    text-align: center;
+}
+
+
+h3 {
+    color: var(--main-accent);
+    text-align: center;
+    margin: 0;
+}
+
+
+h4 {
+    color: var(--main-dark);
+    text-align: center;
+}
+
+
+h5 {
+    font-size: medium;
+    font-weight: bolder;
+    color: var(--main-dark);
+    text-align: center; 
+    margin: 5px;
+}
+
+h6 {
+    color: var(--main-red);
+    text-align: center;
+}
+
+p {
+    color: var(--main-dark);
+    text-align: left; 
+}
